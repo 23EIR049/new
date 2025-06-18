@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Cards - No Curves</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: white;
+      padding: 30px;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .movie-card {
+      width: 220px;
+      background-color: #f0f0f0;
+      border: 1px solid #000;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .movie-info {
+      height: 160px;
+      overflow-y: auto;
+    }
+
+    .movie-title {
+      position: sticky;
+      top: 0;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 8px 10px;
+      font-size: 18px;
+      text-align: center;
+      border-bottom: 1px solid #999;
+      z-index: 1;
+    }
+
+    .movie-summary {
+      font-size: 14px;
+      color: #444;
+      padding: 10px;
+      text-align: justify;
+    }
+
+    .movie-info::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .movie-info::-webkit-scrollbar-thumb {
+      background: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+
+    <!-- Movie 1 -->
+    <div class="movie-card">
+      <img src="image1.jpg" alt="Beauty and the Beast">
+      <div class="movie-info">
+        <h3 class="movie-title">Beauty and the Beast</h3>
+        <div class="movie-summary">
+          Beauty and the Beast is a timeless tale of love, sacrifice, and inner beauty. Belle, a bright and independent young woman, is taken prisoner by a Beast in his enchanted castle. Despite her fears, she befriends the castle’s magical staff and learns to look beyond the Beast’s hideous appearance. As their friendship deepens, Belle begins to uncover the kind heart hidden within the Beast. Their love blossoms, ultimately breaking the spell that cursed him. The story teaches that true beauty lies within, and love has the power to transform even the most unlikely souls.
+        </div>
+      </div>
+    </div>
+
+    <!-- Movie 2 -->
+    <div class="movie-card">
+      <img src="image2.jpg" alt="The Hills Have Eyes">
+      <div class="movie-info">
+        <h3 class="movie-title">The Hills Have Eyes</h3>
+        <div class="movie-summary">
+          The Hills Have Eyes is a brutal horror film that follows a suburban family stranded in a desolate desert. Unbeknownst to them, the area is home to a group of violent, mutated cannibals born from nuclear testing. As the family fights to survive, they are hunted one by one by these inhuman predators. The movie explores themes of survival, revenge, and the primal instincts that emerge under extreme pressure. With intense violence, psychological horror, and raw suspense, it presents a terrifying vision of isolation and human vulnerability in the face of an unstoppable, bloodthirsty enemy.
+        </div>
+      </div>
+    </div>
+
+    <!-- Movie 3 -->
+    <div class="movie-card">
+      <img src="image3.jpg" alt="Wrong Turn">
+      <div class="movie-info">
+        <h3 class="movie-title">Wrong Turn</h3>
+        <div class="movie-summary">
+          Wrong Turn is a suspenseful horror film centered on a group of young adults who take a shortcut through the backwoods of West Virginia. Their path leads them into a nightmare as they encounter a family of deformed, cannibalistic mountain dwellers. With no cell service and no way back, they must use their wits and courage to survive against unimaginable terror. The film is filled with graphic scenes, eerie silence, and moments of shocking violence, building a tense atmosphere that keeps viewers on edge. It's a chilling reminder that sometimes the fastest route isn't always the safest.
+        </div>
+      </div>
+    </div>
+
+    <!-- Movie 4 -->
+    <div class="movie-card">
+      <img src="image4.jpg" alt="The Nun">
+      <div class="movie-info">
+        <h3 class="movie-title">The Nun</h3>
+        <div class="movie-summary">
+          The Nun is a spine-chilling entry in The Conjuring Universe that delves into the origins of a demonic entity. Set in 1952 Romania, it follows a priest and a young novice sent by the Vatican to investigate the mysterious death of a nun at a remote abbey. As they explore the dark secrets within the monastery, they encounter the terrifying spirit Valak, disguised as a nun. The film is known for its gothic atmosphere, haunting visuals, and jump scares. It serves as a prequel to the entire Conjuring series, revealing the roots of evil in a truly terrifying tale.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
