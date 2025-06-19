@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Terrifier Movie Card</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .movie-card {
+      display: grid;
+      grid-template-columns: 300px 500px;  /* Column 1 width, Column 2 width */
+      grid-template-rows: 100px 100px 180px;  /* Row 1 height, Row 2, Row 3 */
+      gap: 10px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+    }
+
+    .movie-card > div {
+      padding: 15px;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+
+    .movie-image {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      background-color: #dcdcdc;
+      overflow: hidden;
+      width: 100%;
+      height: 300%;
+    }
+
+    .movie-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .movie-name {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      background-color: #ffe6e6;
+      width: 100%;
+      height: 100%;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .casting {
+      grid-column: 1 / 2;
+      grid-row: 3 / 3;
+      background-color: #fff0cc;
+      width: 100%;
+      height: 100%;
+    }
+
+    .director {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      background-color: #e0f0ff;
+      width: 100%;
+      height: 100%;
+    }
+
+    .summary {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+      background-color: #d9fdd3;
+      width: 100%;
+      height: 100%;
+      font-size: 16px;
+      line-height: 1.5;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="movie-card">
+    <div class="movie-image">
+      <img src="terr" alt="Terrifier Poster">
+    </div>
+    <div class="movie-name">Terrifier</div>
+    <div class="casting"><strong>Casting:</strong> David Howard Thornton, Jenna Kanell</div>
+    <div class="director"><strong>Director:</strong> Damien Leone</div>
+    <div class="summary">
+      <strong>Summary:</strong> On Halloween night, a sadistic clown named Art terrorizes three young women in a gruesome killing spree. Known for its chilling makeup effects, intense atmosphere, and disturbing antagonist, <em>Terrifier</em> has become a cult horror favorite among genre fans.
+    </div>
+  </div>
+
+</body>
+</html>
